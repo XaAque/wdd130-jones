@@ -4,12 +4,13 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #10b981;
 
 }
 
 h2 {
     font-size: 50px;
+    font-family: 'Bangers';
 }
 
 p {
@@ -20,41 +21,61 @@ p {
 header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 200px 120px 120px 60px;
+    grid-template-rows: 150px 150px 180px 80px 60px 100px;
     background-image: url("../images/hero.jpg");
     background-size: cover;
-    height: 400px
 }
 
 #callout {
     text-align: center;
-    font-size: 25px;
-    grid-column: 2 / 5;
-    display: flex;
-    align-items: center
+    font-size: 35px;
+    grid-row: 3 / 4;
+    grid-column: 1 / 6;
+    font-family: 'Bangers';
 }
 
 header p {
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     grid-column: 2 / 5;
-    align-items: center
+    text-align: center
+}
+
+h3 {
+    text-align: center;
+    background-color: #10b981;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 30px
+}
+
+header h3 {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+    margin: 0px;
 }
 
 main {
 }
 
 nav {
-    height: 200px;
-    background-color: #7476A1;
+    background-color: #10b981;
     display: flex;
     justify-content: space-evenly;
     grid-column: 1 / 6
 }
 
-nav a{
+nav p {
     display: flex;
     align-self: center;
-    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-right: 150px
+}
+
+nav a {
+    display: flex;
+    align-self: center;
+    color: #111827;
     font-weight: bold;
     text-decoration: none;
     padding: 10px;
@@ -63,15 +84,15 @@ nav a{
 }
 
 nav a:hover {
-    background: #01442888;
     border-radius: 30px;
-    text-shadow: 2px 2px #000000
+    text-shadow: 2px 2px #1f2937;
+    text-decoration: underline;
 }
 
 section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #111827;
     padding: 10px;
     column-gap: 10px
 }
@@ -82,24 +103,34 @@ section img {
 }
 
 section h2 {
-    grid-column: 2 / 4
+    grid-column: 2 / 4;
+    margin-top: 25px;
+    margin-bottom: 30px
 }
 
 section p {
-    grid-column: 2 / 4
+    grid-column: 2 / 4;
+    margin-bottom: 50px;
 }
 
 .box {
-    border: 4px solid #014428;
+    border: 4px solid #111827;
     border-radius: 20px;
-    background: #7476A1C0;
+    background: #fbbf24;
     min-height: 300px;
     box-sizing: border-box;
-    grid-row: 3 / 4
+    grid-row: 3 / 4;
+    text-align: center;
 }
 
 .box img {
     width: 100%;
     border-top-left-radius: 16px;
-    border-top-right-radius: 16px
+    border-top-right-radius: 16px;
+    height: 400px
+}
+
+.box h3 {
+    position: relative;
+    bottom: 20px
 }
